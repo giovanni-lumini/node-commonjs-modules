@@ -9,6 +9,6 @@ function three_hobbies(hobbyOne, hobbyTwo, hobbyThree) {
     return my_hobbies
 }
 
-console.log(three_hobbies("calcio", "basket", "moto"));
+/* console.log(three_hobbies("calcio", "basket", "moto")); */
 
 module.exports = three_hobbies;

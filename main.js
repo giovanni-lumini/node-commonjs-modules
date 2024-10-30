@@ -17,22 +17,24 @@ All'interno della tua funzione, usa le tue due funzioni precedenti per costruire
 */
 
 //1 - names.js
-const names = require("./names")
-/* console.log(names); */
+const names = require("./names");
+const get_names = names ("giovanni", "lumini");
+/* console.log(get_names); */
 
 //2 - hobbies.js
 const hobbies = require("./hobbies")
-/* console.log(hobbies); */
+const get_hobbies = hobbies ("calcio", "pallavolo", "basket");
+/* console.log(get_hobbies); */
+
 
 function my_function(){
-    objects = {
-        names,
-        hobbies
-    }
+    const get_names = names ("giovanni", "lumini");
+    const get_hobbies = hobbies ("calcio", "pallavolo", "basket");
+    const objects = { ...get_names, ...get_hobbies };
     return objects
-}
-
-console.log(my_function);
+    }
+const get_my_function = my_function();
+console.log(get_my_function);
 
 
 
